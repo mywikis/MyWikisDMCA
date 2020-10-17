@@ -1,0 +1,21 @@
+{
+  "name": "MyWikis DMCA Compliance",
+  "author": "MyWikis LLC",
+  "url": "https://www.mywikis.com/dmca",
+  "description": "Adds DMCA compliance to this wiki.",
+  "version": "1.0",
+  "license-name": "(c) MyWikis",
+  "type": "other",
+  "manifest_version": 2,
+  "MessagesDirs": {
+    "MyWikisDMCA": [
+      "i18n"
+    ]
+  },
+  "Hooks": {
+    "SkinTemplateOutputPageBeforeExec": "MyWikisDMCAHooks::onSkinTemplateOutputPageBeforeExec"
+  },
+  "AutoloadClasses": {
+    "MyWikisDMCAHooks": "MyWikisDMCA.hooks.php"
+  }
+}
